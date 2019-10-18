@@ -139,7 +139,7 @@ class Request implements RequestInterface
         }
         // Ensure Host is the first header.
         // See: http://tools.ietf.org/html/rfc7230#section-5.4
-        $this->headers = [$header => [$host]] + $this->headers;
+        //$this->headers = [$header => [$host]] + $this->headers;
     }
 
     private function assertMethod($method)
